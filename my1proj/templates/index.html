@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="{% static 'js/maskinput.js' %}"></script>
+
+</head>
+<body>
+    
+<header>
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="container" style="color:#FFFFFF">
+                <div class="row align-items-center">
+                    <div class="col-12 mt-5">
+                        <a href="https://rsue.ru/" target="_blank"><img src="static/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="container mt-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-6 text-start">
+                                <p style="font-size: 46px; font-weight: 900;">Международная научно-практическая онлайн-олимпиада</p>
+                                <button class="btn btn-primary btn-lg mt-5 border-0 fs-4" style="background-color: #5B98E3; height: 70px; width: 305px; font-weight: 700;" data-bs-toggle="modal" data-bs-target="#exampleModal">Принять участие</button>
+                            </div>
+                            <div class="col-6">
+                                <img src="static/images/banner_img.png" alt="" style="max-width: 660px; max-height: 380px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center mt-5">
+                    <div class="col-4" style="font-weight: 700;">
+                        Место проведения онлайн олимпиады:
+                    </div>
+                    <div class="col-8" style="font-weight: 400; font-size: 14;">
+                        <p>Ростовский государственный экономический университет (РИНХ), Точка кипения РГЭУ (РИНХ)</p>
+                        <p>г. Ростов-на-Дону, ул. Б. Садовая, 69 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="container-fluid">
+            <div class="container text-white">
+                <div class="row gx-5">
+                    <div class="col-8 mt-4">
+                        <div class="row" style="font-size: 13px; font-weight: 400;">
+                            <p style="font-size: 18px; font-weight: 700;">Соорганизаторы:</p>
+                            <div class="col">Ростовский государственный экономический университет (РИНХ)
+                            </div>
+                            <div class="col">Федеральная служба по финансовому мониторингу
+                            </div>
+                            <div class="col">Международный учебно-методический центр финансового мониторинга
+                            </div>
+                            <div class="col">Международный сетевой институт в сфере ПОД/ФТ
+                            </div>
+                            <div class="col">Ростовское региональное отделение Вольного экономического общества России
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-4">
+                        <div class="row" style="font-size: 13px; font-weight: 400;">
+                            <p style="font-size: 18px; font-weight: 700;">при поддержке</p>
+                            <div class="col">Аппарата полномочного представителя Президента РФ в Южном федеральном округе
+                            </div>
+                            <div class="col">
+                                Правительства Ростовской области
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<main class="mx-auto">
+    <div class="container">
+        <div class="about mb-5"> 
+            <div class="container mt-5" style="color: #2A30B1; font-family: 'Montserrat', sans-serif; font-weight: 400;">
+                <div class="row mb-5">
+                    <div class="col-12 fs-2 mb-5">Олимпиада включает два этапа, проводимые в заочной форме с применением дистанционных образовательных технологий:</div>
+                    <div class="col-6 fs-5">Первый этап представляет собой отборочный тур и предполагает выполнение индивидуальных тестовых заданий. Все участники первого этапа Олимпиады получают Сертификат установленного образца.</div>
+                    <div class="col-6 fs-5">Второй этап к участию допускаются участники Первого этапа Олимпиады, набравшие наибольшее количество баллов. Второй этап предполагает выполнение индивидуальных тестовых заданий повышенного уровня сложности и решение кейс-задания.</div>
+                </div>
+                <div class="row d-flex justify-content-end">
+                    <div class="col-3 fs-5">Победители Второго этапа Олимпиады получают Дипломы Победителей (1-е, 2-е и 3-е место).</div>
+                    <div class="col-3 fs-5">Участники, набравшие наибольшее количество баллов после победителей, получают Дипломы Лауреатов.</div>
+                </div>
+            </div>
+        </div>
+        <div class="goals">
+            <div class="container text-center">
+                <p class="main-header fs-1" style="color: #3444B8; font-family: 'Montserrat', sans-serif; font-weight: 700;">Цели</p>
+                <nav>
+                    <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist" style="color: #2F185F; border-bottom: 1px solid #2A30B1;">
+                        <button class="nav-link active custom-tab" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Творческие способности</button>
+                        <button class="nav-link custom-tab" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Одаренные дети</button>
+                        <button class="nav-link custom-tab" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Научные знания</button>
+                        <button class="nav-link custom-tab" id="nav-4-tab" data-bs-toggle="tab" data-bs-target="#nav-4" type="button" role="tab" aria-controls="nav-4" aria-selected="false">Профессиональная ориентация</button>
+                        <button class="nav-link custom-tab" id="nav-5-tab" data-bs-toggle="tab" data-bs-target="#nav-5" type="button" role="tab" aria-controls="nav-5" aria-selected="false">Талантливая молодежь</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-1-tab">
+                        <div class="container position-relative bg-white mt-5 p-3 goals-card">
+                            <img src="static\images\icons-tab-1.png" alt="" class="goals-box-img position-absolute top-0 start-0 translate-middle"> 
+                            <p class="goals-box-header">Творческие способности</p> 
+                            <p class="goals-box-text">Выявление и развитие у учащихся, осваивающих общеобразовательные программы основного общего и среднего общего образования, творческих способностей и интереса к научно-исследовательской деятельности</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-2-tab">
+                        <div class="container position-relative bg-white mt-5 p-3 goals-card">
+                            <img src="static\images\icons-tab-1.png" alt="" class="goals-box-img position-absolute top-0 start-0 translate-middle"> 
+                            <p class="goals-box-header">Одаренные дети</p> 
+                            <p class="goals-box-text">Создание условий для поддержки одаренных детей</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-3-tab">
+                        <div class="container position-relative bg-white mt-5 p-3 goals-card">
+                            <img src="static\images\icons-tab-1.png" alt="" class="goals-box-img position-absolute top-0 start-0 translate-middle"> 
+                            <p class="goals-box-header">Научные знания</p> 
+                            <p class="goals-box-text">Распространение и популяризация научных знаний среди молодежи</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                        <div class="container position-relative bg-white mt-5 p-3 goals-card">
+                            <img src="static\images\icons-tab-1.png" alt="" class="goals-box-img position-absolute top-0 start-0 translate-middle"> 
+                            <p class="goals-box-header">Профессиональная ориентация</p> 
+                            <p class="goals-box-text">Профессиональная ориентация молодежи на ранних стадиях формирования личности</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
+                        <div class="container position-relative bg-white mt-5 p-3 goals-card">
+                            <img src="static\images\icons-tab-1.png" alt="" class="goals-box-img position-absolute top-0 start-0 translate-middle"> 
+                            <p class="goals-box-header">Талантливая молодежь</p> 
+                            <p class="goals-box-text">Привлечение талантливой молодежи к продолжению обучения в высших учебных заведениях Российской Федерации</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experts mt-5">
+        <div class="container">
+            <p class="main-header fs-1 text-center mb-5" style="color: #3444B8; font-family: 'Montserrat', sans-serif; font-weight: 700;">Программный комитет олимпиады</p>
+            <div class="row text-center">
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Боев.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Боев Василий Юрьевич </p>
+                            <p class="card-text">проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Жебровская.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Жебровская Людмила Анатольевна</p>
+                            <p class="card-text">начальник Управления компьютеризации учебной и административной деятельности РГЭУ (РИНХ), к.э.н., доцент</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Молчанов.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Молчанов Евгений Григорьевич</p>
+                            <p class="card-text">декан факультета Экономики и финансов РГЭУ (РИНХ), к.э.н.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Андреева.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Андреева Ольга Валентиновна</p>
+                            <p class="card-text">руководитель Центра стратегических исследований социально-экономического развития Юга России</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Романова.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Романова Татьяна Федоровна</p>
+                            <p class="card-text">заведующий кафедрой финансов РГЭУ (РИНХ), д.э.н., профессор</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Семенюта.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Семенюта Ольга Гетовна</p>
+                            <p class="card-text">заведующий кафедрой банковского дела РГЭУ (РИНХ), д.э.н., профессор</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Медведкина.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Медведкина Евгения Александровна</p>
+                            <p class="card-text">заведующий кафедрой мировой экономики РГЭУ (РИНХ), д.э.н., доцент</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-0" style="width:18rem">
+                        <img src="static/images/Мусаелян.png" alt="..." class="card-img-top rounded mx-auto">
+                        <div class="card-body">
+                            <p class="card-title">Мусаелян Анжелика Капреловна</p>
+                            <p class="card-text">заведующий кафедрой налогов и налогообложения РГЭУ (РИНХ), к.э.н., доцент</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="container-fluid mt-5">
+            <p class="main-header fs-1 text-center mb-5" style="color: #3444B8; font-family: 'Montserrat', sans-serif; font-weight: 700;">Фотогалерея</p>
+                <div class="row g-0">
+                    <div class="col"><img src="static/images/gallery/image 13.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 16.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 17.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 18.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 19.png" alt="" class="gallery-photo"></div>
+                </div>
+                <div class="row g-0">
+                    <div class="col"><img src="static/images/gallery/image 13.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 16.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 17.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 18.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 19.png" alt="" class="gallery-photo"></div>
+                </div>
+                <div class="row g-0">
+                    <div class="col"><img src="static/images/gallery/image 13.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 16.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 17.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 18.png" alt="" class="gallery-photo"></div>
+                    <div class="col"><img src="static/images/gallery/image 19.png" alt="" class="gallery-photo"></div>
+                </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="contacts">
+        <div class="container-fluid mt-5">
+            <p class="main-header fs-1 text-center mb-5" style="color: #3444B8; font-family: 'Montserrat', sans-serif; font-weight: 700;">Контакты</p>
+            <div class="row" style="height: 234px;  color: #FFFFFF; font-family: 'Montserrat', sans-serif;">
+                <div class="col-8 d-flex flex-column justify-content-center" style="background-color: #4340C9;">
+                    <div class="contacts-text ms-5">
+                        <p style="font-weight: 700; font-size: 21px;">г. Ростов-на-Дону, ул. Б. Садовая, 69</p>
+                        <p style="font-weight: 400; font-size: 15px;">Ростовский государственный экономический университет (РИНХ)</p>
+                        <p style="font-weight: 500; font-size: 17px;">Точка кипения РГЭУ (РИНХ)</p>
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center" style="background-color: #0A72ED;">
+                    <p class="mx-auto" style="font-size: 32px; font-weight: 700;">+7 (863) 345-40-40</p>
+                    <p class="mx-auto" style="font-size: 24px; font-weight: 400; color:#ACD2FF">fnauka@bk.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.6904289973786!2d39.71591351552213!3d47.222639279161044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b912d1b908fb%3A0xf448c3f26e7c8247!2z0KDQmNCd0KU!5e0!3m2!1sru!2sru!4v1605473512197!5m2!1sru!2sru" width="100%%" height="600" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0" style="border: 0px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body" style="font-family: 'Montserrat', sans-serif; color: #FFFFFF;">
+                <div class="container ms-5 my-4">
+                    <a href="https://rsue.ru/"><img src="static/images/logo.png" alt=""></a>
+                    <p class="modal-title mt-5 fs-3" style="font-weight: 700;">Регистрация участия</p>   
+                </div>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="row mx-5 p-5 g-4 text-center fs-5" style="font-weight: 400;" >
+
+                            <div class="col-4">ФИО</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="fio" id="inputName" aria-describedby="inputName" placeholder="Иванов Иван Иванович">
+                            </div>
+
+                            <div class="col-4">Наименование учебного зведения</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="stud" id="inputStudy" aria-describedby="inputStudy" placeholder="РГЭУ (РИНХ)">
+                            </div>
+
+                            <div class="col-4">Телефон</div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="phone" id="inputPhoneNumber" aria-describedby="inputPhoneNumber" placeholder="+7 (___) ___-__-__">
+                                <script>
+                                    jQuery(function($){
+                                    $("#inputPhoneNumber").mask("+7(999)999-99-99");
+                                });
+                                </script>
+                            </div>
+
+                            <div class="col-4">Email</div>
+                            <div class="col-8">
+                                <input type="email" class="form-control" name="email" id="inputEmail" aria-describedby="inputEmail" placeholder="example@mail.ru">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary btn-lg mt-5 border-0 fs-5" style="background-color: #5B98E3; height: 70px; width: 340px; font-weight: 700;" type="submit">Зарегистрироваться</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

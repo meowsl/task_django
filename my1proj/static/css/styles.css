@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../images/Group.png);
+    background-size: cover;
+}
+
+.info{
+    height: 220px;
+    background: linear-gradient(89.95deg, #211EAA 0.04%, #3648B9 99.96%);
+}
+
+.card-title{
+    color: #201EAA; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px;
+}
+.card-text{
+    color: #191773; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px;
+}
+.card-img-top{
+    max-height: 161px;
+    max-width: 115px;
+}
+
+
+.goals-card{
+    max-width: 625px;
+    box-shadow: 0px 0px 64px 0px rgba(190, 200, 245, 1);
+    border-radius: 15px;
+}
+.goals-box-header{
+    color: #2F185F;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+.goals-box-text{
+    color: #2F185F;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+.custom-tab.active {
+    color: #2A30B1 !important;
+    font-weight: 700;
+    border: none;
+    border-bottom: 3px solid #2A30B1 !important;
+    border-radius: 0px !important;
+}
+.custom-tab:hover {
+    border: none;
+}
+.nav-tabs{
+    border-bottom: 4px solid #2A30B1;
+}
+.gallery-photo{
+    max-width: 288px;
+    max-height: 205px;
+}
+
+.modal-body{
+    background-image: url(../images/reg.png);
+    background-size: cover;
+}
