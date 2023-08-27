@@ -1,4 +1,4 @@
 # task1_django
 Python3 project for Task 1.
 
-Primitive layout without adaptability.
+Primitive horrors with a minimal amount of adaptability
