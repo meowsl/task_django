@@ -74,3 +74,23 @@ html{
     background-image: url(../images/reg.png);
     background-size: cover;
 }
+
+@media screen and (max-width: 500px){
+    .cont-row{
+        max-height: 100% !important;
+    }
+    iframe{
+        max-height: 100% !important;
+    }
+}
+@media screen and (max-width: 580px){
+    .goals-box-img{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 768px){
+    .img-fluid{
+        visibility: hidden;
+    }
+}
