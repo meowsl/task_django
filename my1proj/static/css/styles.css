@@ -89,8 +89,9 @@ html{
         visibility: hidden;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .img-fluid{
         visibility: hidden;
+        height: 0 !important;
     }
 }
